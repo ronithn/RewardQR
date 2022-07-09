@@ -1,0 +1,26 @@
+{
+  "name": "rewardqr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "my_js.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronithn/RewardQR.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronithn/RewardQR/issues"
+  },
+  "homepage": "https://github.com/ronithn/RewardQR#readme",
+  "dependencies": {
+    "firebase": "^9.9.0",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
