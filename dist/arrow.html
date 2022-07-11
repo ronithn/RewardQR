@@ -44,7 +44,7 @@ arrImg{
   width:auto;
 } */
 
-#Body{
+.Body{
     font-weight: 300;
     line-height: 40px;
 }
@@ -68,6 +68,72 @@ button{
   display: flex;
   justify-content: center;
 }
+
+.c2{
+   background-color:white;
+   max-width: 100%;
+   padding-left: 20px;
+   padding-right: 20px;
+   border-radius:15px;
+}
+.username{
+   font-weight: bold;
+   width: 90%;
+   margin: 0px 0px  20px 0px ;
+   height: 35px;
+   padding: 6px 15px;
+   border-radius: 5px;
+   outline: none;
+   border: none;
+   background: #ffcfbf;
+   color: #fff5f5;
+   font-size: 14px;
+}
+.btn{
+   font-weight: bold;
+   width: 230px;
+   margin: 0 35px 20px ;
+   height: 45px;
+   padding: 6px 15px;
+   border-radius: 5px;
+   outline: none;
+   border: none;
+   background: white;
+    color: black; 
+   font-size: 14px;
+}
+
+.c2{
+    background-color: #ee7f6e;
+/*     border-top-width: 40px;
+ */    padding-top: 24px;
+    margin-right: 16px;
+    margin-left: 16px;
+    border-radius: 8px;
+}
+
+.formHead{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: auto;
+    margin-bottom: 4px;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: -0.2px;
+
+}
+
+.text{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  margin: auto;
+  letter-spacing: -0.2px;
+  margin-bottom: 20px;
+
+}
 </style>
 <body style="
 margin-left: 0px;
@@ -83,21 +149,23 @@ margin-top: 0px;
         <p id="hey" style="
         margin-bottom: 16px;
     ">Hey 👋 ,</p>
-        <p id="Body" style="
+        <p class="Body" style="
         margin-top: 16px;">Ronith this side, I am sitting right by the sticky notes let's chat</p> 
-
-        <p>I've got your kitkat :)</p>
         
 </div>
-<!--     <div id="ping">
-      <form>
-        <input type="email" placeholder="Enter your email" /><br>
-        <input type="submit" value="Ping Me" />
-      </form>  
-    </div> -->
+  <div class="c2">
+    <p class="formHead">Get Your KitKat 🍫</p>
+    <p class="text"> You deserve a break</p>
+    <form class="add">
+      <input name="email" type="text" placeholder="Enter your 1mg email" class="username"/>      
+      <button class="btn">Ping Me</button>
+    </form>
+  </div>
 
 
     <!-- <img src="https://media4.giphy.com/media/2wZouP9NT3JMx7FXeB/giphy.gif?cid=790b7611d02c646e10d018aea72d91ce95a2cbaf7806fcae&rid=giphy.gif&ct=s"> -->
   </div>
+<script src="index.js"></script>
+<script src="bundle.js"></script>
 </body>
 </html>
