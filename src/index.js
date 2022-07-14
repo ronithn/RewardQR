@@ -37,14 +37,32 @@ getDocs(colRef)
     console.log(email)
   }) */
 
-  // realtime collection data
+  // Email Validation
+          /* function ValidateEmail(inputText)
+          {
+          var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+          if(inputText.value.match(mailformat))
+          {
+          alert("Valid email address!");
+          document.add.email.focus();
+          return true;
+          }
+          else
+          {
+          alert("You have entered an invalid email address!");
+          document.add.email.focus();
+          return false;
+          }
+          }
+ */  // realtime collection data
 onSnapshot(colRef, (snapshot) => {
-  let books = []
+  let email = []
   snapshot.docs.forEach(doc => {
-    books.push({ ...doc.data(), id: doc.id })
+    email.push({ ...doc.data(), id: doc.id })
   })
-  console.log(books)
+  console.log(email)
 })
+
 
 // adding docs
 const addMailForm = document.querySelector('.add')
@@ -59,19 +77,4 @@ addDoc(colRef, {
 })
 })
 
-function ValidateEmail(inputText)
-{
-var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-if(inputText.value.match(mailformat))
-{
-alert("Valid email address!");
-document.add.text1.focus();
-return true;
-}
-else
-{
-alert("You have entered an invalid email address!");
-document.add.text1.focus();
-return false;
-}
-}
+

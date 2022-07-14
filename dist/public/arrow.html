@@ -6,7 +6,9 @@
     <link rel="icon" href="./favicon.png">
 
     <title>Meet ME</title>
-
+    <script src="email-validation.js"></script>
+    <script src="index.js"></script>
+    <script src="bundle.js"></script>
 <style> 
 body{background-color: white;}	
 
@@ -139,7 +141,7 @@ button{
 margin-left: 0px;
 margin-right: 0px;
 margin-top: 0px;
-">
+" >
 
     <!-- <div class="Arrow">
     <img id="arrImg"src="https://animated-gif-creator.com/images/01/gif-arrow-left-with-images-gif-animated-images_95.gif">
@@ -154,18 +156,16 @@ margin-top: 0px;
         
 </div>
   <div class="c2">
-    <p class="formHead">Get Your KitKat 🍫</p>
+    <p class="formHead">Get Your KitKat 🍫 </p>
     <p class="text"> You deserve a break</p>
-    <form class="add">
-      <input name="email" type="text" placeholder="Enter your 1mg email" class="username"/>      
-      <button class="btn">Ping Me</button>
+    <form class="add" action="#">
+      <input name="email" id="email"type="text" placeholder="Enter your 1mg email" class="username"/>      
+      <button class="btn" onclick=" ValidateEmail(document.add.email) ">Ping Me</button>
     </form>
   </div>
-
-
+  
     <!-- <img src="https://media4.giphy.com/media/2wZouP9NT3JMx7FXeB/giphy.gif?cid=790b7611d02c646e10d018aea72d91ce95a2cbaf7806fcae&rid=giphy.gif&ct=s"> -->
   </div>
-<script src="index.js"></script>
-<script src="bundle.js"></script>
+
 </body>
 </html>
